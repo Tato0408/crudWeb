@@ -23,5 +23,29 @@ function mostrarDatos(datos){
         </tr>
         `
     ));
+
+    
 }
 obtenerIntegrantes();
+const modal = document.getElementById("mdAgregar");
+    const btnAgregar = document.getElementById("btnAgregar");
+    const btnCerrar = document.getElementById("btnCerrar");
+
+    btnAgregar.addEventListener ("click",()=> {modal.showModal()});
+    btnCerrar.addEventListener("click",()=>   {modal.close()});
+
+    document.getElementById("frmAgregar").addEventListener("submit", async e=>{e.preventDefault}); // "e" Representa a submit. Evita que el fomulario se envie solo
+    //Capturar los valores del formulario
+    const nombre = document.getElementById("txtNombre").value.trim();
+    const apellido = document.getElementById("txtApellido").value.trim();
+    const correo = document.getElementById("txtEmail").value.trim();
+
+    if(!nombre || !apellido || ! correo){
+        alert("IIngrese los valores en blanco")
+        return; // Para evitar que los datos se envien y lo envia al bloque de codigo principal
+    }
+
+    const respuesta = await fetch(API_URL,
+        {method: "POST"
+
+    })
