@@ -18,6 +18,7 @@
                 </li>
             </ul>
             <ul>
+                <li><a href="modal.html"></a>.</li>
                 <li><a href="#">Tareas</a></li>
                 <li><a href="#">Mi perfil</a></li>
                 <li><a href="#" role="button">Cerrar Sesión</a></li>
@@ -43,6 +44,23 @@
             </table>
         </div>
     </main>
+    <!--El modal/dialogo aparece frente al contenido-->
+    <dialog id="mdAgregar" >
+        <article>
+            <header>
+                <a href="#" class="close" id="btn-cerrara"></a>
+                <h3>Agregar Registro</h3>
+            </header>
+            <form id="frmAgregar">
+                <input type="text" id="txtNombre" placeholder="Nombre" required>
+                <input type="text" id="txtApellido" placeholder="Apellido" required>
+                <input type="text" id="txtEmail" placeholder="Correo Electrónico">
+    
+                <button type="submit" class="contrast">Guardar</button>
+            </form>
+        </article>
+        
+    </dialog>
     <button id="boton" class="add_boton">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
     </button>
