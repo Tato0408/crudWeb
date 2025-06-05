@@ -1,0 +1,40 @@
+.add_boton{
+    position: fixed;/*el boton queda flotante encima del documento*/
+    bottom: 30px;
+    right: 40px;
+
+    background-color: green;
+
+    color: white;
+    border-radius: 50%; /*Hacemos redondo el boton*/
+
+    width: 70px;
+    height: 70px; /* Tamaño del boton para que sea simetrico*/
+
+    border: none;/*Quitar bordes por defecto*/
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0,0.5) ; /* */
+
+    display: flex; /* Activamos felxbox*/
+    
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1001 ; /*Indica quien va a quedar encima ee quien*/
+
+    transition: transform 0.4s; /*Animacion del boton*/
+
+
+}
+
+.add_boton:hover{
+    transform: scale(1.1);/*Mide cuantas veces sera el tamaño del boton, 1 es la base, abajjo de esto se hara mas abajo, y arriba de 1 se hara mas grande*/
+}
+
+.tabla-scroll{
+    overflow-x: auto;
+}
+
+button{
+    margin: 1px;
+}
