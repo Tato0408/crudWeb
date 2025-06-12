@@ -45,6 +45,7 @@
         </div>
     </main>
     <!--El modal/dialogo aparece frente al contenido-->
+
     <dialog id="mdAgregar" >
         <article>
             <header>
@@ -57,6 +58,23 @@
                 <input type="email" id="txtEmail" placeholder="Correo Electrónico" required>
     
                 <button type="submit" class="contrast">Guardar</button>
+            </form>
+        </article>
+        
+    </dialog>
+
+    <dialog id="mdActualizar" >
+        <article>
+            <header>
+                <a href="#" class="close" id="btnCerrarEditar"></a> <!--X-->
+                <h3>Modificar Integrante</h3>
+            </header>
+            <form id="frmEditar">
+                <input type="hidden" id="txtIdEditar">  <!--Campo oculto para guardar el ID-->                <input type="text" id="txtNombreEditar" placeholder="Nombre" required>
+                <input type="text" id="txtApellidoEditar" placeholder="Apellido" required>
+                <input type="email" id="txtEmailEditar" placeholder="Correo Electrónico" required>
+    
+                <button type="submit" class="contrast">Actualizar</button>
             </form>
         </article>
         
